@@ -15,7 +15,6 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-
 	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
 	{
 		putchar(a_to_f);
