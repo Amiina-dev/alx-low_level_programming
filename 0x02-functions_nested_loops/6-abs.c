@@ -13,4 +13,6 @@ int _abs(int n)
 		return (n * -1);
 	}
 	_putchar('\n');
+
+	return (n);
 }
