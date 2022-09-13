@@ -11,7 +11,7 @@ int main(void)
 
 	int b;
 
-	for(b = 0; b < 8; b++)
+	for (b = 0; b < 8; b++)
 	{
 		_putchar(abc[b]);
 	}
