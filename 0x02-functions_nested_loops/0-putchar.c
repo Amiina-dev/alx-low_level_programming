@@ -13,7 +13,7 @@ int main(void)
 
 	for(b = 0; b < 8; b++)
 	{
-		_putchar(aaaa[b]);
+		_putchar(abc[b]);
 	}
 	_putchar('\n');
 
