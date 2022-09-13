@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char aaaa[] = "_putchar";
+	char abc[] = "_putchar";
 
 	int b;
 
