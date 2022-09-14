@@ -3,7 +3,7 @@
 
 
 /**
- * main - print sum of even Fionacci sequence up to 4,000,000
+ *main - print sum of even Fionacci sequence up to 4,000,000
  *Return: Always 0 (Success)
  */
 
