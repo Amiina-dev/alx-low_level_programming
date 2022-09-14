@@ -15,17 +15,16 @@ int main(void)
 	a = 1;
 	b = 1;
 
-		while (b < 4000000)
+	while (b < 4000000)
+	{
+		sum = a + b;
+		a = b;
+		b = sum;
+		if ((sum <= 4000000) && (sum % 2 == 0))
 		{
-			sum = a + b;
-			a = b;
-			b = sum;
-			if ((sum <= 4000000) && (sum % 2 == 0))
-			{
-				sum_of_evens += sum;
-			}
+			sum_of_evens += sum;
 		}
-		 printf("%d\n", sum_of_evens); 
-
+	}
+	 printf("%d\n", sum_of_evens); 
 	 return (0);
 }
