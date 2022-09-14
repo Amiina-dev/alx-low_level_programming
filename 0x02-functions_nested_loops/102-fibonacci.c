@@ -14,12 +14,12 @@ int main(void)
 
 	for (counter = 1; counter <= (count_to / 2); counter++)
 	{
-		printf("%li, %li, ", a, b);
+		printf("%li. %li, ", a, b);
 		a += b;
 		b += a;
 	}
 	if (count_to % 2 == 1)
-		printf("%li.", a);
+		printf("%li", a);
 
 	printf("\n");
 
