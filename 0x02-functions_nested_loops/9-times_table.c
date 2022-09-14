@@ -4,7 +4,7 @@
  *times_table - prints the multiplication table
  */
 
-void time_teble(void)
+void times_table(void)
 {
 	int row;
 	int column;
