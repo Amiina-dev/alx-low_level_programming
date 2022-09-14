@@ -7,21 +7,37 @@
 
 int main(void)
 {
-	int counter;
-	int count_to = 50;
-	long a = 1;
-	long b = 2;
+	int i;
 
-	for (counter = 1; counter <= (count_to / 2); counter++)
+	unsigned long int j, k, next, sum;
+
+	j = 1;
+
+	k = 2;
+
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
+
 	{
-		printf(",%li, %li", a, b);
-		a += b;
-		b += a;
-	}
-	if (count_to % 2 == 1)
-		printf("%li", a);
 
-	printf("\n");
+		if (j < 4000000 && (j % 2) == 0)
+
+		{
+
+			sum = sum + j;
+
+		}
+
+		next = j + k;
+
+		j = k;
+
+		k = next;
+
+	}
+
+	printf("%lu\n", sum);
 
 	return (0);
 }
