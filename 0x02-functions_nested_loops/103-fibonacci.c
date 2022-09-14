@@ -10,21 +10,24 @@
 int main(void)
 {
 	int sum_of_evens = 0;
-	int a = 1;
-	int b = 1;
+	int a; 
+	int b;
 	int sum = 1;
 
-	while (b < 4000000)
-	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		if ((sum <= 4000000) && (sum % 2 == 0))
+	a = 1;
+	b = 1;
+
+		while (b < 4000000)
 		{
-			sum_of_evens += sum;
+			sum = a + b;
+			a = b;
+			b = sum;
+			if ((sum <= 4000000) && (sum % 2 == 0))
+			{
+				sum_of_evens += sum;
+			}
 		}
-	}
-	 printf("%d\n", sum_of_evens); 
-	 
+		 printf("%d\n", sum_of_evens); 
+
 	 return (0);
 }
