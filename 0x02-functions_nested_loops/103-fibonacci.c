@@ -7,24 +7,24 @@
 
 int main(void)
 {
-	int sum_of_evens = 0;
-	int a; 
-	int b;
-	int sum = 1;
+	int i;
+	unsigned long int j, k, next, sum;
 
-	a = 1;
-	b = 1;
-
-	while (b < 4000000)
+	j = 1;
+	k = 2;
+	sum = 0;
+	
+	for (i = 1; i <= 33; ++i)
 	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		if ((sum <= 4000000) && (sum % 2 == 0))
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			sum_of_evens += sum;
+			sum = sum + j;
 		}
+		next = j + k;
+		j = k;
+	k = next;
 	}
-	 printf("%d\n", sum_of_evens); 
-	 return (0);
+	printf("%lu\n", sum);
+
+	return (0);
 }
