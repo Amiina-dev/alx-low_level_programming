@@ -3,7 +3,7 @@
 /**
  * _atoi - converts a string intoan integer
  * @s: string to be converted
- * return: integer
+ * Return: integer
  */
 
 int _atoi(char *s)
