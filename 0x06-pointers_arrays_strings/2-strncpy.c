@@ -1,10 +1,10 @@
 #include "main.h"
 
-/*
+/**
  * _strncpy - copies a string
  * @dest: destination of string
  * @src: string to be copied
- * @n: nuber of characters
+ * @n: number of characters
  * Return: dest
  */
 
