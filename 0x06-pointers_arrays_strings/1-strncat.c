@@ -2,14 +2,15 @@
 
 /**
  * _strncat - function that concatenates two strings
- * @dest: string to be appended to 
+ * @dest: string to be appended to
  * @src: string to append
  * @n: append n number of characters
+ * Return: string
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	while (dest)
+	while (*dest)
 		i++;
 
 	for (i = 0; i < n; i++)
