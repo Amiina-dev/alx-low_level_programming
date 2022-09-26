@@ -10,7 +10,7 @@ void print_diagsums(int *a, int size)
 {
 	int diagonalsumone = 0;
 	int diagonalsumtwo = 0;
-	int row,i;
+	int row, i;
 
 	for (row = 0; row < size; row++)
 	{
