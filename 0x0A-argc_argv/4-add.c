@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
 /**
- * main - program that adds oitiv numbers
+ * main - program that adds poitive numbers
  * @argc: arguement count
  * @argv: arguement vector
  * Return: 0
@@ -12,30 +10,23 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int num, digit, sum = 0;
 
-	if (argc > i)
+	for (num = 1; num < argc; num++)
 	{
-		for (i = 1; i < argc; i++)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			int b;
-			char *str;
-
-			str = argv[i];
-			for (b = 0; str[b] != '\0'; b++)
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
-				if (str[b] < 48 || str[b] > 57)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
 		}
+
+		sum += atoi(argv[num]);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		sum += atoi(argv[i]);
-	}
+
 	printf("%d\n", sum);
+
 	return (0);
 }
