@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strspn - Gets the length of a prefix substring.
- * @s: string to be checked
- * @accept: accepted chars
+ * _strspn - gets the lenght of a prefix of a substring
+ * @s: string to be searched
+ * @accept: accepted characters
  * Return: length
  */
 

@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - strpbrk
- * @s: pointer
- * @accept: pointer
- * Return: NULL
+ * _strpbrk - searches a string for any set of byte
+ * @s: string to search
+ * @accept: target matches
+ * Return: pointer to index of string at first occurence
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (i = 0; accept[i]; i++)
 		{
-			for (*s == accept[i])
+			if (*s == accept[i])
 			{
 				return (s);
 			}

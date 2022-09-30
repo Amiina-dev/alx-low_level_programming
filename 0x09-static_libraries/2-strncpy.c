@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncpy - two words
- * @dest: destination pointer
- * @src: source pointer
- * @n: parameter
+ * _strncpy - copies a string
+ * @dest: destination of string
+ * @src: string to be copied
+ * @n: number of characters
  * Return: dest
  */
 
@@ -12,14 +12,12 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0' && i < n; i++)
-	{
+	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
-	}
-
-	for ( ; i < n; i++)
+	while (i < n)
 	{
 		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }

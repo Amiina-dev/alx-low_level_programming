@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _memset - memset
+ * _memset - creates a file that stores constant bytes
  * @s: pointer
- * @b:data
- * @n: index
- * Return: *s
+ * @b: constant
+ * @n: no of bytes
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
