@@ -7,7 +7,7 @@
  * Return: no of words in the string (int)
  */
 
-int wordno(char *s)
+int wordnos(char *s)
 {
 	int flag, c, w;
 
@@ -40,7 +40,7 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-	words = wordno(str);
+	words = wordnos(str);
 	if (words == 0)
 		return (NULL);
 
