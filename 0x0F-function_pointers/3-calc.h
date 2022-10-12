@@ -1,6 +1,9 @@
 #ifndef _HEADER_
 #define _HEADER_
 
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * struct op - Struct op
  * @op: The operator
@@ -10,7 +13,6 @@
 typedef struct op
 {
 	char *op;
-
 	int (*f)(int a, int b);
 } op_t;
 
