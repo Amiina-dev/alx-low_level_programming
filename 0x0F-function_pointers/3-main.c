@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - when user runs main,
@@ -25,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 
 	/* check if theres only one operator */
-	if (atgv[2][1] != '\0')
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -46,6 +44,5 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	res = (get_op_func(argv[2]))(a, b);
 	printf("%d\\n", res);
-
 	return (0);
 }
