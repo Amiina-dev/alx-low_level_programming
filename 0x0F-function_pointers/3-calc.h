@@ -26,4 +26,4 @@ int op_mod(int a, int b);
 /* function to select correct operation function to perform */
 int (*get_op_func(char *s))(int, int);
 
-#endif
+#endif /*_HEADER_*/
