@@ -4,7 +4,7 @@
 
 /**
  * print_all - prints everything
- * @format: list of all arguements passed to the function 
+ * @format: list of all arguements passed to the function
  * Return: void
  */
 
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(args, char *);
-				if (s ==NULL)
+				if (s == NULL)
 					s = "(nil)";
 				printf("%s%s", seperator, s);
 				break;
