@@ -2,6 +2,25 @@
 #include <stdlib.h>
 
 /**
+ * print_opcodes - prints the opcodes of this program
+ * @a: address of the main function
+ * @n: number of bytes to print
+ */
+
+void print_opcodes(char *a, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2hhx", a[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
+
+/**
  * main - print opcodes of a given machine
  * @argc: no of arguements
  * @argv: argement vector
@@ -10,7 +29,7 @@
 
 int main(int argc, char *argv[])
 {
-	int count, bytes;
+	int a;
 
 	if (argc != 2)
 	{
@@ -18,19 +37,13 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	bytes = atoi(argv[1]);
-	if (bytes <0)
+	a = atoi(argv[1]);
+	if (a < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (count = 0;; count < bytes; count++)
-	{printf("%02hhx", *((char *)main + count));
-		if (count < bytes - 1)
-			printf(" ");
-		else
-			printf("\n");
-	}
+	print_opcodes((char *)&main, a);
 	return (0);
 }
