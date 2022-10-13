@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inclue <stdlib.h>
+#include <stdlib.h>
 
 /**
  * main - print opcodes of a given machine
