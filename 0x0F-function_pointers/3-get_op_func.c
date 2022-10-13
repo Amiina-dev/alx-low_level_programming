@@ -23,11 +23,9 @@ int (*get_op_func(char *s))(int a, int b)
 	i = 0;
 	while (i < 5)
 	{
-		if (s[0] == ops[i].op[0])
-		{
+		if (strcmps(s, ops[i].op) == 0)
 			return (ops[i].f);
-		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
