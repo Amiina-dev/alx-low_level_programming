@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include "vaiadic_functions.h"
 
 /**
  * print_all - prints everything
