@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "vaiadic_functions.h"
 
@@ -11,19 +10,15 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, start = 0;
+	unsigned int i = 0, start = 0;
 	va_list args;
-	char *s;
+	char *p;
 
 	va_start(args, format);
-
-	i = 0;
-
 	while (format && format[i])
 	{
 		switch (format[i])
-		{
-			case 'c':
+		{	case 'c':
 				switch (start)
 				{ case 1: printf(", "); }
 				start = 1;
@@ -46,19 +41,15 @@ void print_all(const char * const format, ...)
 				{ case 1: printf(", "); }
 				start = 1;
 				s = va_arg(args, char *);
-				if (s)
+				if (p)
 				{
-					printf("%s", s);
+					printf("%s", p);
 					break;
 				}
-				printf("%p", s);
-				break;
-		}
-			i++;
-		}
-		
+				printf("%p", p);
+				break; }
+		i++;
 	}
-
 	printf("\n");
 	va_end(args);
 }
