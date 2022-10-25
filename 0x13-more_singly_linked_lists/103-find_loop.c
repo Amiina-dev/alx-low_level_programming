@@ -1,4 +1,4 @@
-#include "lists.c"
+#include "lists.h"
 
 /**
  * find_listint_loop - Finds the loop contained in a linked list
@@ -31,8 +31,10 @@ listint_t *find_listint_loop(listint_t *head)
 
 			return (tortoise);
 		}
+
 		tortoise = tortoise->next;
 		hare = (hare->next)->next;
 	}
+
 	return (NULL);
 }
