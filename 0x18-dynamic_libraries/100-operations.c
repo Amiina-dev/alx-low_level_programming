@@ -21,6 +21,17 @@ int sub(int a, int b)
 }
 
 /**
+ * mul - mul
+ * @a:int 
+ * @b: int
+ * Return: result
+ */
+int mul(int a, int b)
+{
+	return (a *b);
+}
+
+/**
  * divide - divide
  * @a: int
  * @b: int
